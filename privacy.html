@@ -12,7 +12,7 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p class="muted">V-Taper AI: Get V-Shaped · Last updated August 12, 2026</p>
+<p class="muted">V-Taper AI: Get V-Shaped · Last updated August 24, 2026</p>
 
 <h2>The short version</h2>
 <p>Body scans are measured on your device and are never uploaded. A meal photo
@@ -27,6 +27,23 @@ Measurements and cutout images are stored only in the app's private storage
 on your phone, and are deleted when you use "Delete all local data" or uninstall
 the app.</p>
 
+<h2>Face data</h2>
+<p>As part of a body scan, the app uses on-device face detection (Google ML Kit
+Face Detection) solely to locate your head in the photo and measure your head
+width, which is used to compute the shoulders-to-head-width comparison shown
+with your result. Face detection runs entirely on your device. The app does not
+perform facial recognition, does not identify you, and does not create a
+biometric template or faceprint.</p>
+<p>The only face-related information the app stores is a set of numeric
+measurements (head width and its pixel position in the photo), saved together
+with the scan in the app's private storage on your phone. No face data — neither
+the photo, nor the detected face region, nor these measurements — is ever
+collected by us, uploaded, transmitted, or shared with any third party. Because
+face data never leaves your device, nothing is retained on any server. The
+stored measurements, the photo, and the body cutout remain on your device until
+you delete the scan, use "Delete all local data," or uninstall the app, at which
+point they are permanently deleted.</p>
+
 <h2>AI Meal Scan</h2>
 <p>When you choose AI Meal Scan, the selected meal photo is sent over HTTPS to
 our processing service hosted by Vercel and then to Google's Gemini service to
@@ -36,6 +53,12 @@ after the request finishes. Vercel and Google may process request data under
 their service and security terms. Do not submit a photo containing people,
 sensitive documents, or information unrelated to the meal. You can instead add
 every meal manually without sending a photo.</p>
+
+<p>Before your first AI Meal Scan, the app shows this disclosure — what is sent
+(the selected meal photo only) and who receives it (our Vercel-hosted service
+and Google Gemini) — and asks for your permission. Nothing is transmitted unless
+you agree, and every later scan is likewise started only by your explicit
+action.</p>
 
 <p>If you save a meal with its photo, that copy and its nutrition values remain
 in the app's private storage on your phone until you delete the meal, use
