@@ -16,9 +16,9 @@
 
 <h2>The short version</h2>
 <p>Body scans are measured on your device and are never uploaded. A meal photo,
-or a photo of a restaurant menu, is transmitted only when you explicitly choose
-AI Meal Scan or Menu Picks. We run no user accounts, advertising, or cross-app
-tracking.</p>
+a photo of a restaurant menu, or a meal you type out is transmitted only when you
+explicitly choose one of the AI options. We run no user accounts, advertising, or
+cross-app tracking.</p>
 
 <h2>Body scans and measurements</h2>
 <p>Photos you take or select are processed entirely on your device using
@@ -82,6 +82,16 @@ agree. Each later scan is likewise started only by your explicit action. Menu
 photos are not saved to your meal log. When you log a dish from the results, the
 dish name and its estimated calories and macronutrients are stored on your
 device like any other meal.</p>
+
+<h2>Describing a meal in words</h2>
+<p>Instead of a photo you can type what you ate, such as "chicken 100 g" or
+"밥 한 공기". That sentence is sent over HTTPS to the same Vercel-hosted service
+and on to Google's Gemini service, which returns an estimate of the calories and
+macronutrients. Only the words you type are sent: no photo, no measurements, no
+identifier. The estimate is shown for you to edit before anything is saved, and
+the saved meal stays on your device. We use the text only to return that estimate
+and our application does not intentionally retain it after the request finishes.
+Write only what you ate; do not include anything unrelated to the meal.</p>
 
 <h2>Body details you enter</h2>
 <p>Height, weight, and age are optional and stored only on your device. They are
