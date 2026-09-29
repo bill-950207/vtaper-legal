@@ -12,7 +12,7 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p class="muted">V-Taper AI: Get V-Shaped · Last updated September 10, 2026</p>
+<p class="muted">V-Taper AI: Get V-Shaped · Last updated September 30, 2026</p>
 
 <h2>The short version</h2>
 <p>Body scans are measured on your device and are never uploaded. A meal photo,
@@ -93,12 +93,27 @@ the saved meal stays on your device. We use the text only to return that estimat
 and our application does not intentionally retain it after the request finishes.
 Write only what you ate; do not include anything unrelated to the meal.</p>
 
+<h2>AI recommended routine</h2>
+<p>During setup you can ask for an AI recommended training routine. Before the
+first request the app shows what is sent and who receives it, and nothing is
+sent unless you agree; you can pick a coach-built routine instead. When you
+agree, the app sends over HTTPS to our processing service hosted by Supabase,
+and from there to OpenAI, your sex, age, height, weight, shape goal, focus area
+(waist or shoulders), experience level, number of training days, and the list
+of exercises the app can use. OpenAI drafts the routine and we return it to
+your device, where it is stored. We use these details only to build that
+routine and our application does not intentionally retain them after the
+request finishes. To limit use, our service keeps a random identifier
+generated for your device and a count of requests per day; it is not linked to
+your name or any other personal detail. Body scan photos are never sent.</p>
+
 <h2>Body details you enter</h2>
-<p>Height, weight, and age are optional and stored only on your device. They are
+<p>Height, weight, and age are optional and stored on your device. They are
 used to display measurement context and, when you request it, calculate a
-starting nutrition target. Your height, weight, and age are never transmitted.
-The only figures that leave the device are the remaining calories, remaining
-protein, and shape goal sent with a Menu Picks request, as described above.</p>
+starting nutrition target. They leave the device only when you ask for an AI
+recommended routine, as described above. The only other figures that leave the
+device are the remaining calories, remaining protein, and shape goal sent with
+a Menu Picks request.</p>
 
 <h2>Purchases</h2>
 <p>Subscriptions are processed by Apple. To activate your subscription across
